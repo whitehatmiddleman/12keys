@@ -1,9 +1,9 @@
-# 12keys Stream Deck (DRAFT)
+# 12keys Stream Deck
 Hand-wired 12 keys macro with Vial firmware
 
 ![alt stream-deck][stream-deck]
 
-While browsing for the next keyboard build, I stumbled upon this macro keyboard in from thinkiverse. I wanted to create a macro pad that would used for streaming but also used for developing and other misc stuff. I decided to use the Vial firmware so I can change the keys and macros on the fly.
+While browsing for the next keyboard build, I stumbled upon this macro pad from [thingiverse](https://www.thingiverse.com/thing:4186055). I wanted to create a macro pad that would used for streaming but also used for developing and other misc stuff. I decided to use the Vial firmware so I can change the keys and macros on the fly.
 
 
 ## Material
@@ -11,13 +11,14 @@ While browsing for the next keyboard build, I stumbled upon this macro keyboard 
 - 12 Cherry MX switches
 - One Pro Micro
 - Wires, Female/Male jumper wires
-- optional
- - 12 Cherry MX keycaps, if you don't want to print the keycaps
- - rubber feet, if you didn't print the non-slip pad which needs TPU material
+
+### Optional
+- 12 Cherry MX keycaps, if you don't want to print the keycaps
+- rubber feet, if you didn't print the non-slip pad which needs TPU material
 
 
 ## Build
-Following the [Hand-wiring Guide](https://docs.qmk.fm/#/hand_wire?id=hand-wiring-guide) from the QMK firmware documentation, this is how I wired up the macro keyboard with the controller.
+Following the [Hand-wiring Guide](https://docs.qmk.fm/#/hand_wire?id=hand-wiring-guide) from the QMK firmware documentation, this is how I wired up the macro pad with the controller.
 
 ![alt assembled][assembled]
 
@@ -36,7 +37,7 @@ Refer to the [Pro Micro pinout](https://golem.hu/pic/pro_micro_pinout.jpg) for m
 
 ## Vial firmware
 
-Vial firmware is a fork form the QMK firmware, but allows you to use a host gui to change the keymapings on the fly. More about the firmware can be found here: [get.vial.today](https://get.vial.today/)
+Vial firmware is a fork form the QMK firmware, but allows you to use a host gui to change the key mappings on the fly. More about the firmware can be found here: [get.vial.today](https://get.vial.today/)
 
 
 Clone my firmware:
@@ -59,12 +60,17 @@ qmk flash -kb 12keys -km vial
 
 After you've flashed the firmware, install the Vial host gui from [here](https://get.vial.today/download/). For more instructions follow the [first time use guide](https://get.vial.today/manual/first-use.html)
 
+Connect the macro pad, run the application and you should be all set.
+
+![alt vial-app][vial-app]
+
+
 ## Features
 - All the cool Vial features!!!
 
 ## Troubleshooting
-- Make sure your macro keyboard and connected based on the pin configuration
-- Connect the macro keyboard before running the application, otherwise click on refresh
+- Make sure your macro pad and connected based on the pin configuration
+- Connect the macro pad before running the application, otherwise click on refresh
 
 ## Future Improvements
 - Use a Nice!Nano controller, but will lose the Vial functionality.
@@ -83,3 +89,4 @@ After you've flashed the firmware, install the Vial host gui from [here](https:/
 [stream-deck]: https://raw.githubusercontent.com/greyhatmiddleman/12keys/main/images/3d-printed-stream-desk.jpg
 [assembled]: https://raw.githubusercontent.com/greyhatmiddleman/12keys/main/images/assembled.jpg
 [open]: https://raw.githubusercontent.com/greyhatmiddleman/12keys/main/images/open-stream-desk.jpg
+[vial-app]: https://raw.githubusercontent.com/greyhatmiddleman/12keys/main/images/vial-app.png
