@@ -34,6 +34,7 @@ It is important to wire the controller accordingly, the firmware is coded for th
 
 Refer to the [Pro Micro pinout](https://golem.hu/pic/pro_micro_pinout.jpg) for more details. Otherwise make sure you update the matrix row/col pins in the config.h file.
 
+![alt open][open]
 
 ## Vial firmware
 
